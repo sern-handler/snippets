@@ -1,0 +1,27 @@
+{
+  "name": "sern-snippets",
+  "displayName": "sern Snippets",
+  "description": "Snippets for the sern discord bot framework",
+  "version": "1.0.0",
+  "repository": {"url": "https://github.com/SrIzan10/sern-snippets"},
+  "publisher": "SrIzan",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.49.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
