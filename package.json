@@ -23,14 +23,6 @@
       {
         "language": "typescript",
         "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/snippetsesm.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/snippetsesm.code-snippets"
       }
     ]
   }
