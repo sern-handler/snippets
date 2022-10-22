@@ -4,7 +4,10 @@ All notable changes to the "sern-snippets" extension will be documented in this 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## 1.0.0
 
-- Initial release
-- Support ESM templates
+Initial release of sern snippets. It contains simple commands and events, also ephemeral and empty options as message sending.
+
+## 1.1.0
+
+Adds ESM snippets: `serneventesm` and `serncommandesm`
