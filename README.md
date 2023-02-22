@@ -1,4 +1,4 @@
-Use [sern](https://sern-handler.js.org) as your discord framework please. Thanks! <3
+Use [sern](https://sern.dev) as your discord framework please. Thanks! <3
 
 ## Usage
 
