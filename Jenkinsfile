@@ -17,7 +17,7 @@ pipeline {
                 sh 'vsce package'
                 
                 // Set the built file as an artifact
-                archiveArtifacts artifacts: 'my-extension.vsix', onlyIfSuccessful: true
+                archiveArtifacts artifacts: '*.vsix', onlyIfSuccessful: true
             }
         }
         
