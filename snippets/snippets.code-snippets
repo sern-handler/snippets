@@ -15,13 +15,13 @@
   "sern: Send ephemeral message": {
     "scope": "js,ts",
     "prefix": "ctxeph",
-    "body": ["ctx.reply({content: `$1`, ephemeral: true})"],
+    "body": ["ctx.reply({ content: `$1`, ephemeral: true })"],
     "description": "Send an ephemeral message with some content."
   },
   "sern: Send message with empty array": {
     "scope": "js,ts",
     "prefix": "ctxopt",
-    "body": ["ctx.reply({$1})"],
+    "body": ["ctx.reply({ $1 })"],
     "description": "Send a message with an empty array."
   },
   "sern: Create a simple event": {
