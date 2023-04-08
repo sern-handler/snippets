@@ -5,10 +5,12 @@ pipeline {
         stage('Build VSCode extension') {
             steps {
                 // Clone the repository that contains the VSCode extension
-                git 'https://github.com/username/repo.git'
+                git 'https://github.com/sern-handler/snippets.git'
                 
                 // Install dependencies
                 sh 'npm install'
+
+                sh 'npm i -g @vscode/vsce'
                 
                 // Build the extension
                 sh 'vsce package'
