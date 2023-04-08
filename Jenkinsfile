@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    tools { nodejs "NodeJS (sern snippets)" }
     
     stages {
         stage('Build VSCode extension') {
