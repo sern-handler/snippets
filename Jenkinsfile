@@ -5,7 +5,7 @@ pipeline {
         stage('Build VSCode extension') {
             steps {
                 // Clone the repository that contains the VSCode extension
-                git 'https://github.com/sern-handler/snippets.git'
+                git branch: 'jenkins-testing', url: 'https://github.com/sern-handler/snippets.git'
                 
                 // Install dependencies
                 sh 'npm install'
