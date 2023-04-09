@@ -1,12 +1,15 @@
 pipeline {
     agent any
-    tools { nodejs "NodeJS (sern snippets)" }
+    tools { nodejs "NodeJS" }
     
     stages {
         stage('Build VSCode extension') {
+            when {
+                expression { env.BRANCH_NAME == 'main' }
+            }
             steps {
                 // Clone the repository that contains the VSCode extension
-                git branch: 'jenkins-testing', url: 'https://github.com/sern-handler/snippets.git'
+                git branch: 'main', url: 'https://github.com/sern-handler/snippets.git'
                 
                 // Install dependencies
                 sh 'npm install'
