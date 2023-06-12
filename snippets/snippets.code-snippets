@@ -36,7 +36,7 @@
     "scope": "js,ts",
     "prefix": "serncommand",
     "body": [
-      "const { commandModule, CommandType } = require('@sern/handler');\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx, options) => {\r\n\t\t$3\r\n\t},\r\n});"
+      "const { commandModule, CommandType } = require('@sern/handler');\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx) => {\r\n\t\t$3\r\n\t},\r\n});"
     ],
     "description": "Create a simple command in sern."
   },
@@ -52,7 +52,7 @@
     "scope": "js,ts",
     "prefix": "serncommandesm",
     "body": [
-      "import { commandModule, CommandType } from '@sern/handler';\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx, options) => {\r\n\t\t$3\r\n\t},\r\n});"
+      "import { commandModule, CommandType } from '@sern/handler';\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx) => {\r\n\t\t$3\r\n\t},\r\n});"
     ],
     "description": "Create a simple command in sern."
   }
