@@ -15,20 +15,20 @@
   "sern: Send ephemeral message": {
     "scope": "js,ts",
     "prefix": "ctxeph",
-    "body": ["ctx.reply({ content: `$1`, ephemeral: true })"],
+    "body": ["await ctx.reply({ content: `$1`, ephemeral: true })"],
     "description": "Send an ephemeral message with some content."
   },
   "sern: Send message with empty array": {
     "scope": "js,ts",
     "prefix": "ctxopt",
-    "body": ["ctx.reply({ $1 })"],
+    "body": ["await ctx.reply({ $1 })"],
     "description": "Send a message with an empty array."
   },
   "sern: Create a simple event": {
     "scope": "js,ts",
     "prefix": "sernevent",
     "body": [
-      "const { EventType, eventModule } = require('@sern/handler');\r\n\r\nexport default eventModule({\r\n    type: EventType.${1:Discord},\r\n    name : '$2',\r\n    execute($3) {\r\n      $4\r\n    }\r\n  })"
+      "const { EventType, eventModule } = require('@sern/handler');\r\n\r\nexport default eventModule({\r\n    type: EventType.${1:Discord},\r\n    name : '$2',\r\n    execute: async () => {\r\n      $4\r\n    }\r\n  })"
     ],
     "description": "Create a simple event in sern."
   },
@@ -44,7 +44,7 @@
     "scope": "js,ts",
     "prefix": "serneventesm",
     "body": [
-      "import { EventType, eventModule } from '@sern/handler';\r\n\r\nexport default eventModule({\r\n    type: EventType.${1:Discord},\r\n    name : '$2',\r\n    execute($3) {\r\n      $4\r\n    }\r\n  })"
+      "import { EventType, eventModule } from '@sern/handler';\r\n\r\nexport default eventModule({\r\n    type: EventType.${1:Discord},\r\n    name : '$2',\r\n    execute: async () => {\r\n      $4\r\n    }\r\n  })"
     ],
     "description": "Create a simple event in sern."
   },
