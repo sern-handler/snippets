@@ -55,5 +55,13 @@
       "import { commandModule, CommandType } from '@sern/handler';\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx) => {\r\n\t\t$3\r\n\t},\r\n});"
     ],
     "description": "Create a simple command in sern."
+  },
+    "sern: Create a cli ESM command": {
+    "scope": "js,ts",
+    "prefix": "sernclicommandesm",
+    "body": [
+      "import { commandModule, CommandType } from '@sern/handler';\r\nimport { PermissionFlagsBits } from 'discord.js';\r\n\r\n//config for publishing command to discord api.\r\nexport const config: Partial<ValidPublishOptions> = {\r\n//dmPermission: true //uncomment to allow command to run in dms\r\n//defaultMemberPermissions: [PermissionFlagsBits...] // uncomment to require specific permission to run command.\r\nguildIds: [""] //uncomment to insert specific guild ids that this command can be used in or remove for global usage.};\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx) => {\r\n\t\t$3\r\n\t},\r\n});"
+    ],
+    "description": "Create a cli command in sern."
   }
 }
