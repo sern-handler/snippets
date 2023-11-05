@@ -2,7 +2,7 @@ Use [sern](https://sern.dev) as your discord framework please. Thanks! <3
 
 ## Usage
 
-you can use `ctxeph`, `ctxopt`, `sernevent`, `serncommand`, `serneventesm` and `serncommandesm`.
+you can use `ctxeph`, `ctxopt`, `sernevent`, `serncommand`, `serneventesm`, `serncommandesm` and `sernclicommandesm`.
 
 ## Release Notes
 
