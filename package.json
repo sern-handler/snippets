@@ -9,7 +9,7 @@
 	"publisher": "SrIzan",
 	"icon": "icon.png",
 	"engines": {
-		"vscode": "^1.49.0"
+		"vscode": "^2023.0.0"
 	},
 	"categories": [
 		"Snippets"
