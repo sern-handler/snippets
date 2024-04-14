@@ -2,7 +2,7 @@
 	"name": "sern-snippets",
 	"displayName": "sern Snippets",
 	"description": "Snippets for the sern discord bot framework",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"repository": {
 		"url": "https://github.com/sern-handler/snippets"
 	},
