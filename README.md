@@ -2,7 +2,7 @@ Use [sern](https://sern.dev) as your discord framework please. Thanks! <3
 
 ## Usage
 
-you can use `ctxeph`, `ctxopt`, `sernevent`, `serncommand`, `serneventesm`, `serncommandesm` and `sernclicommandesm`.
+you can use `ctxeph`, `ctxopt`, `serndiscordeventesm`, `serneventesm`, `serncommandesm` and `sernclicommandesm`.
 
 ## Release Notes
 
@@ -13,5 +13,10 @@ Initial release of sern snippets. It contains simple commands and events, also e
 ### 1.1.0
 
 Adds ESM snippets: `serneventesm` and `serncommandesm`
+
+### 1.2.0
+
+Removes non-ESM snippets: `sernevent` and `serncommand`
+Adds ESM snippet: `serndiscordeventesm`
 
 ---

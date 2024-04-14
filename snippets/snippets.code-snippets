@@ -24,22 +24,6 @@
     "body": ["await ctx.reply({ $1 })"],
     "description": "Send a message with an empty array."
   },
-  "sern: Create a simple event": {
-    "scope": "js,ts",
-    "prefix": "sernevent",
-    "body": [
-      "const { EventType, eventModule } = require('@sern/handler');\r\n\r\nexport default eventModule({\r\n    type: EventType.${1:Discord},\r\n    name : '$2',\r\n    execute: async () => {\r\n      $4\r\n    }\r\n  })"
-    ],
-    "description": "Create a simple event in sern."
-  },
-  "sern: Create a simple command": {
-    "scope": "js,ts",
-    "prefix": "serncommand",
-    "body": [
-      "const { commandModule, CommandType } = require('@sern/handler');\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx) => {\r\n\t\t$3\r\n\t},\r\n});"
-    ],
-    "description": "Create a simple command in sern."
-  },
   "sern: Create a simple ESM event": {
     "scope": "js,ts",
     "prefix": "serneventesm",
@@ -47,6 +31,14 @@
       "import { EventType, eventModule } from '@sern/handler';\r\n\r\nexport default eventModule({\r\n    type: EventType.${1:Discord},\r\n    name : '$2',\r\n    execute: async () => {\r\n      $4\r\n    }\r\n  })"
     ],
     "description": "Create a simple event in sern."
+  },
+  "sern: Create a simple ESM discord event": {
+    "scope": "js,ts",
+    "prefix": "serndiscordeventesm",
+    "body": [
+      "import { EventType, discordEvent } from '@sern/handler';\r\n\r\nexport default discordEvent({\r\n    name : '$2',\r\n    execute: async () => {\r\n      $4\r\n    }\r\n  })"
+    ],
+    "description": "Create a simple discord event in sern."
   },
   "sern: Create a simple ESM command": {
     "scope": "js,ts",
@@ -58,10 +50,10 @@
   },
     "sern: Create a cli ESM command": {
     "scope": "js,ts",
-    "prefix": "sernclicommandesm",
+    "prefix": "sernclicommand",
     "body": [
-      "import { commandModule, CommandType } from '@sern/handler';\r\nimport { PermissionFlagsBits } from 'discord.js';\r\n\r\n//config for publishing command to discord api.\r\nexport const config: Partial<ValidPublishOptions> = {\r\n//dmPermission: true //uncomment to allow command to run in dms\r\n//defaultMemberPermissions: [PermissionFlagsBits...] // uncomment to require specific permission to run command.\r\nguildIds: [""] //uncomment to insert specific guild ids that this command can be used in or remove for global usage.};\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx) => {\r\n\t\t$3\r\n\t},\r\n});"
+      "import { commandModule, CommandType } from '@sern/handler';\r\nimport { PermissionFlagsBits } from 'discord.js';\r\n\r\n//config for publishing command to discord api.\r\nexport const config = {\r\n//dmPermission: true //uncomment to allow command to run in dms\r\n//defaultMemberPermissions: [PermissionFlagsBits...] // uncomment to require specific permission to run command.\r\nguildIds: [""] //uncomment to insert specific guild ids that this command can be used in or remove for global usage.};\r\n\r\nexport default commandModule({\r\n\ttype: CommandType.$1,\r\n\tplugins: [],\r\n\tdescription: '$2',\r\n\toptions: [],\r\n\texecute: async (ctx) => {\r\n\t\t$3\r\n\t},\r\n});"
     ],
     "description": "Create a cli command in sern."
-  }
+  },
 }
