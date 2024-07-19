@@ -12,6 +12,7 @@ jobs:
           node-version: 20
       - name: Publish to Open VSX Registry
         uses: HaaLeo/publish-vscode-extension@v1
+        id: openVSXPublish
         with:
           pat: ${{ secrets.OPEN_VSX }}
       - name: Publish to Visual Studio Marketplace
