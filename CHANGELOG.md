@@ -19,3 +19,7 @@ Removes all non-esm commands
 ## 1.2.1
 
 Polish some stuff
+
+## 1.2.2
+
+Fix some ci stuff and versioning mistakes
