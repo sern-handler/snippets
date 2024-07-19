@@ -1,6 +1,6 @@
 ## Usage
 
-you can use `ctxeph`, `ctxopt`, `serndiscordeventesm`, `serneventesm`, `serncommandesm` and `sernclicommandesm`.
+you can use `ctxeph`, `ctxopt`, `serncommand` and `sernevent`.
 
 ## Release Notes
 
