@@ -11,3 +11,11 @@ Initial release of sern snippets. It contains simple commands and events, also e
 ## 1.1.0
 
 Adds ESM snippets: `serneventesm` and `serncommandesm`
+
+## 1.2.0 (breaking changes!)
+
+Removes all non-esm commands
+
+## 1.2.1
+
+Polish some stuff
